@@ -1,11 +1,11 @@
 @extends('layouts.app')
    
 @section('content')
-<div class="container">
+<div class="container" >
     <div class="row justify-content-center">
         <div class="col-md-8">
             <center>
-                <button id="btn-nft-enable" onclick="initFirebaseMessagingRegistration()" class="btn btn-danger btn-xs btn-flat">Allow for Notification</button>
+                <button id="btn-nft-enable" onClick="initFirebaseMessagingRegistration()"  class="btn btn-danger btn-xs btn-flat">Allow for Notification</button>
             </center>
             <div class="card">
                 <div class="card-header">{{ __('Dashboard') }}</div>
@@ -53,6 +53,7 @@
     const messaging = firebase.messaging();
   
     function initFirebaseMessagingRegistration() {
+    alert("sad"); 
             messaging
             .requestPermission()
             .then(function () {
